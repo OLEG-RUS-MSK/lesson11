@@ -2,7 +2,7 @@ name = "Oleg"
 print("Name:", name)
 age = 54
 print('Age:', age)
-newAge = age + 1
-print("New Age:", newAge)
-is_student = bool(1==1)
+age = age + 1
+print("New Age:", age)
+is_student = bool(True)
 print("Is Student:", is_student)
