@@ -4,7 +4,6 @@ students = list(students)
 students.sort()
 dictionary = {}
 for n in range(len(grades)):
-    m = sum(grades[n]) / len(grades[n])
-    dictionary.update({students[n]: m})
+    dictionary.update({students[n]: sum(grades[n]) / len(grades[n])})
 
 print(dictionary)
