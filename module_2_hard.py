@@ -20,6 +20,8 @@ for a in range(3, 21): # цикл для создания словаря
                 a2 = sum_ - a1
                 if a2 > a1:
                     mean.append([a1, int(a2)])
+                else:
+                    break
 
     mean.sort()
     result = [] # временный список для сортированных пар и объединения в одно число
