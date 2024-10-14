@@ -2,7 +2,7 @@ my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 x = 0
 while x < len(my_list):
     date = my_list[x]
-    x = x + 1
+    x += 1
     if date == 0:
         continue
     elif date > 0:
