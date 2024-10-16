@@ -14,7 +14,7 @@ for a in range(3, 21): # цикл для создания словаря
         sum_ = a / (a - b)
         if a % (a - b) != 0:
             continue
-        elif a % (a - b) == 0: # если кратно
+        else: # если кратно
             for a1 in range(1, int(sum_)): # цикл для суммы
                 a2 = sum_ - a1
                 if a2 > a1:
