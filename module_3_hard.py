@@ -13,7 +13,9 @@ def calculate_structure_sum(myst):
             calculate_structure_sum(i)
             continue
         if isinstance(i, dict):
-            calculate_structure_sum(i.items())
+            calculate_structure_sum(i.keys())
+            calculate_structure_sum(i.values())
+            # calculate_structure_sum(i.items()) - короче, но больше циклов
             continue
         if isinstance(i, str):
             lists.append(len(i))
