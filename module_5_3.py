@@ -50,8 +50,6 @@ print(len(h1))
 print(len(h2))
 
 print('\nЗадние номер 2:')
-h1 = House('ЖК Эльбрус', 10)
-h2 = House('ЖК Акация', 20)
 print(h1)
 print(h2)
 print(h1 == h2) # __eq__
