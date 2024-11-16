@@ -22,7 +22,6 @@ class Animal: # класс описывающий животных
 
     def get_cords(self): # выводит координаты: "X, Y, Z>"
         return print('X:', self._cords[0], 'Y:', self._cords[1], 'Z:', self._cords[2])
-        # ??? ПОЧЕМУ НЕ РАБОТАЕТ ??? : return f'X: {self._cords[0]}, Y: {self._cords[1]}, Z: {self._cords[2]}'
 
     def attack(self): # если степень опасности меньше 5: "Sorry, i'm peaceful :)",
         # если больше: "Be careful, i'm attacking you 0_0"
@@ -39,7 +38,7 @@ class Bird(Animal): # класс описывающий птиц
 
     def lay_eggs(self): # выводит строку "Here are(is) <случайное число от 1 до 4> eggs for you"
         print("Here are(is)", random.randint(1, 4), "eggs for you")
-        # ??? Method 'lay_eggs' may be 'static' ??? - с одной стороны да, с другой, он только для птиц
+        # ??? Method 'lay_eggs' may be 'static' ??? - с одной стороны - да, а с другой, он только для птиц
 
 class AquaticAnimal(Animal): # класс описывающий водоплавающих
     _DEGREE_OF_DANGER = 3
