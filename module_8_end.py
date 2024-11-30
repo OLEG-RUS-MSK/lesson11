@@ -18,9 +18,9 @@ class Car:
 
     def __is_valid_numbers(self, numbers): #- принимает numbers и проверяет его на корректность
         if not isinstance(numbers, str): # выбрасывает исключение, если передана не строка
-            raise IncorrectVinNumber(f'Некорректный тип данных для номеров')
+            raise IncorrectCarNumbers(f'Некорректный тип данных для номеров')
         if len(numbers) != 6: # выбрасывает исключение, если передана строка не состоит ровно из 6 символов
-            raise IncorrectVinNumber(f'Неверная длина номера')
+            raise IncorrectCarNumbers(f'Неверная длина номера')
         else:
             return True # возвращает True, если корректный
 
